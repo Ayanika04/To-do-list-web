@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'poppins',sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width:100%;
+    min-height: 100vh;
+    background: url(images/background2.jpg);
+    padding: 10px;
+}
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+.todo-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: Cursive;
+}
+.todo-app h2 img{
+    width: 40px;
+    margin-left:10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 12px 15px;
+    font size: 30px;
+    font-family: Cursive;
+}
+button{
+    border: none;
+    outline: none;
+    background: #c4a484;
+    padding: 16px 50px;
+    color:#f5f5dc;
+    font-size: 16px;
+    font-family: cursive;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius:40px;
+    box-shadow: 0px 6px 8px #3d2b1f;
+       
+}
+
+
+ul li{
+    list-style: none;
+    font-size:17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0px 2px 4px #3d2b1f ;
+    background: #eed9c4;
+}
+
+ul li::before{
+    content: ' ';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius:50%;
+    background-image:url(images/unchecked.jpg);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+    background: #f9ebdf;
+}
+ul li.checked::before{
+    background-image:url(images/checked.jpg);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    height: 40px;
+    width: 40px;
+    font-size: 22px;
+    color: #1c0f04;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
